@@ -14,12 +14,16 @@ class TestCases(unittest.TestCase):
         self.assertAlmostEqual(pt.y, 19.2)
 
     def test_equality_one(self):
-        # Replace pass with the test code.
-        pass
+        point1 = point.Point(7, 7)
+        point2 = point.Point(7, 7)
+        self.assertEqual(point1,point2)
+
 
     def test_equality_two(self):
-        # Replace pass with the test code.
-        pass
+        point1 = point.Point(2, 4)
+        point2 = point.Point(5, 5)
+        self.assertNotEqual(point1, point2)
+
         
 
 
